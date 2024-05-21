@@ -15,6 +15,13 @@
             _conteo++;
             return _conteo;
         }
-
+        public static Contador operator +(Contador c1, Contador c2)
+        {
+            return new Contador(c1.Conteo + c2.Conteo);
+        }
+        public static Contador operator -(Contador c1, Contador c2)
+        {
+            return new Contador(c1.Conteo - c2.Conteo);
+        }
     }
 }
