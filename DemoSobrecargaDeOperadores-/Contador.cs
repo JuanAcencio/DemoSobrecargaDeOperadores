@@ -23,5 +23,14 @@
         {
             return new Contador(c1.Conteo - c2.Conteo);
         }
+
+        public static explicit operator Contador(int value)
+        {
+            return new Contador(value);
+        }
+        public static explicit operator int(Contador c)
+        {
+            return c.Conteo;
+        }
     }
 }

@@ -18,3 +18,9 @@ Console.WriteLine($"conteo actual de c3:{c3.Conteo}");
 
 Contador c4 = c3 - c2;
 Console.WriteLine($"conteo actual de c4:{c4.Conteo}");
+
+Contador c5 = (Contador)5;
+Console.WriteLine($"conteo actual de c5:{c5.Conteo}");
+
+int n = (int)c2;
+Console.WriteLine($"El valor de n es: {n}");
